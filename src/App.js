@@ -9,9 +9,12 @@ function App() {
   let novoValor = contador+1
   SetContador(novoValor)
  }
- function manexoClikDecremento() {
+ function manexoClickDecremento() {
   let novoValor = contador-1
   SetContador(novoValor) 
+ }
+ function reset() {
+  SetContador(0)
  }
 
  
@@ -20,7 +23,8 @@ function App() {
     <h1>MEGACONTADOR</h1>
     <p>{contador}</p>
     <Boton texto="Aumenta o contador" operacion={manexoClickAumento}></Boton>
-    <Boton texto="Disminúe o contador" operacion={manexoClikDecremento}></Boton>
+    <Boton texto="Disminúe o contador" operacion={manexoClickDecremento}></Boton>
+    <Boton texto="Reset" operacion={reset}></Boton>
     </>
     
   );
