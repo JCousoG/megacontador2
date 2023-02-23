@@ -9,6 +9,13 @@ button {
   text-align: center;
   width: 20em;
   height: 10em;
+  justify-content: center;
+  border-radius: 33%;
+  border-color: brown;
+  border-width: 0.5cm;
+  background-color: salmon;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 
   }
 #boton {
