@@ -1,6 +1,7 @@
 
 import "./App.css"
 import { useState } from "react";
+import Boton from "./componentes/boton/Boton";
 
 function App() {
  let [contador, SetContador] = useState(0)
@@ -12,26 +13,15 @@ function App() {
   let novoValor = contador-1
   SetContador(novoValor) 
  }
- let [aumento, SetAumento] = useState(0)
- function manexoAumento() {
-  let novoValor = aumento+1
-  SetAumento(novoValor)
-  manexoClickAumento()
- }
- let [decremento, SetDecremento] = useState(0)
- function manexoDecremento () {
- let novoValor = decremento+1
- SetDecremento(novoValor)
- manexoClikDecremento()
- }
 
  
   return (
-    <div id="boton">
+    <>
+    <h1>MEGACONTADOR</h1>
     <p>{contador}</p>
-    <button onClick={manexoAumento} >Aumenta o contador ({aumento})</button>
-    <button onClick={manexoDecremento}>Disminúe o contador ({decremento})</button>
-    </div>
+    <Boton texto="Aumenta o contador" operacion={manexoClickAumento}></Boton>
+    <Boton texto="Disminúe o contador" operacion={manexoClikDecremento}></Boton>
+    </>
     
   );
 }

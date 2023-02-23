@@ -3,6 +3,12 @@ p {
   text-align: center;
   border-style: double;
 }
+  h1 {
+  font-size:xx-large;
+  text-align: center;
+  text-decoration: dotted;
+  color: crimson;
+  }
 button {
   display: flex;
   align-items: center;
