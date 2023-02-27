@@ -36,8 +36,7 @@ function App() {
   )
   function contaAtras () {
     setIncremento(-1)
-    if (auto === true) 
-    SetAuto(false);  else if (auto === false) SetAuto(true) 
+    SetAuto(!auto)
    }
 
  

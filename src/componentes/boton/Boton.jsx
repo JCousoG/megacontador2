@@ -8,7 +8,7 @@ function Boton ({texto, operacion}) {
     operacion()
 }
 return (
-   <button onClick={manexoClick}>{texto} ({contador})</button>
+   <button onClick={manexoClick}>{texto} <span class="badge badge-light">{contador}</span></button>
 )
 }
 export default Boton
