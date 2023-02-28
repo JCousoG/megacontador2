@@ -4,7 +4,9 @@
   border-style: double;
   font-style: oblique;
   color: red;
-  text-shadow: 10px 10px 5px
+  text-shadow: 10px 10px 5px;
+  background-image: url("gatitos.jfif")
+  
 }
 .negro {
   font-size:1000% ;
@@ -12,7 +14,8 @@
   border-style: double;
   font-style: oblique;
   color: black;
-  text-shadow: 10px 10px 5px
+  text-shadow: 10px 10px 5px; 
+  background-image: url("perritos.jfif")
 
 }
   h1 {
