@@ -1,23 +1,26 @@
 .roxo {
-  font-size:xx-large ;
+  font-size:1000% ;
   text-align: center;
   border-style: double;
   font-style: oblique;
   color: red;
+  text-shadow: 10px 10px 5px
 }
 .negro {
-  font-size:xx-large ;
+  font-size:1000% ;
   text-align: center;
   border-style: double;
   font-style: oblique;
   color: black;
+  text-shadow: 10px 10px 5px
 
 }
   h1 {
-  font-size:xx-large;
+  font-size:1000%;
   text-align: center;
   text-decoration: dotted;
   color: crimson;
+  
   }
 button {
   display: flex;

@@ -4,19 +4,19 @@ import { useEffect, useState } from "react";
 import Boton from "./componentes/boton/Boton";
 
 function App() {
- let [valorActual, SetContador] = useState(0)
+ let [Contador, SetContador] = useState(0)
  let [auto, SetAuto] = useState(false)
  let [incremento, setIncremento] = useState(1)
  function manexoClickBidireccional() {
-  let novoValor = valorActual+incremento
+  let novoValor = Contador+incremento
   SetContador(novoValor)
  }
    function manexoClickAumento() {
-  let novoValor = valorActual+1
+  let novoValor = Contador+1
   SetContador(novoValor)
  }
  function manexoClickDecremento() {
-  let novoValor = valorActual-1
+  let novoValor = Contador-1
   SetContador(novoValor) 
  }
  function reset() {
@@ -32,7 +32,7 @@ function App() {
     if (auto) { codigoTemporizador = setTimeout (manexoClickBidireccional,1000)}
     return ()=> {clearTimeout(codigoTemporizador)}
   }, 
-  [auto,valorActual]
+  [auto,Contador]
   )
   function contaAtras () {
     setIncremento(-1)
@@ -46,7 +46,7 @@ function App() {
   return (
     <>
     <h1>MEGACONTADOR</h1>
-    <p className={valorActual<0 ? "roxo" : "negro"}> {valorActual}</p>
+    <p className={Contador<0 ? "roxo" : "negro"}> {Contador}</p>
     <div id="boton"> 
     <Boton texto="Aumenta o contador" operacion={manexoClickAumento}></Boton>
     <Boton texto="Disminúe o contador" operacion={manexoClickDecremento}></Boton>
